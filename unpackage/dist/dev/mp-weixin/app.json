@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/hailuo/hailuo",
+    "pages/userinfo/userinfo"
+
+
+
+  ],
+  "subPackages": [
+    {"root":"subPackages",
+      "name":"分包A",
+    "pages": ["pages/bubbledetail/bubbledetail",
+      "pages/mybubble/mybubble",
+      "pages/myconch/myconch",
+      "pages/hailuochat/hailuochat"
+    ]
+  }],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "hailuojihua",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#31c27c",
+    "list": [{
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/home1.png",
+        "selectedIconPath": "static/tabbar/home2.png"
+      },
+      {
+        "text": "海螺",
+        "pagePath": "pages/hailuo/hailuo",
+        "iconPath": "static/logo.png"
+      },
+      {
+        "text": "个人",
+        "pagePath": "pages/userinfo/userinfo",
+        "iconPath": "static/tabbar/user1.png",
+        "selectedIconPath": "static/tabbar/user2.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "lazyCodeLoading": "requiredComponents"
+
+}
